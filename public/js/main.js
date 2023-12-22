@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8080');
+const socket = io('https://prueba-socket-dev-bgjk.2.us-1.fl0.io');
 const formulario = document.querySelector('#formulario');
 const mensajeInput = document.querySelector('#mensjae-input');
 const mensajes = document.querySelector('#mensajes');
@@ -11,6 +11,7 @@ formulario.addEventListener('submit', e => {
     socket.emit('mensaje-frontend', mensaje);
 
     formulario.reset();
+
 
 });
 
